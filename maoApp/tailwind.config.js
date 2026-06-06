@@ -12,6 +12,7 @@ module.exports = {
         'popBold': 'Poppins_700Bold',
       },
       colors: {
+        'roxo': '#AC97CF',
         'branco': '#FAFAFA',
         'preto': {
           DEFAULT: '#000',

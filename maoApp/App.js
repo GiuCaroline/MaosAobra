@@ -10,7 +10,11 @@ import { useFonts,
     Poppins_500Medium, Poppins_600SemiBold,
     Poppins_700Bold } from '@expo-google-fonts/poppins';
 
+import { Comeco } from './src/screens/Comeco';
 import { Login } from './src/screens/Login';
+import { Cadastro } from './src/screens/Cadastro';
+import { Menu } from './src/screens/Menu';
+import { Home } from './src/screens/Home';
 
 
 const Stack = createNativeStackNavigator();
@@ -44,7 +48,12 @@ function AppContent() {
           animationDuration: 1000,
         }}
       > 
+        <Stack.Screen name="Splash" component={Comeco} />
+        <Stack.Screen name="Comeco" component={Comeco} />
         <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Cadastro" component={Cadastro} />
+        <Stack.Screen name="Menu" component={Menu} />
+        <Stack.Screen name='Home' component={Home} />
       </Stack.Navigator>
 
       <StatusBar />
