@@ -15,6 +15,7 @@ import { Login } from './src/screens/Login';
 import { Cadastro } from './src/screens/Cadastro';
 import { Menu } from './src/screens/Menu';
 import { Home } from './src/screens/Home';
+import { Novo } from './src/screens/Novo';
 
 
 const Stack = createNativeStackNavigator();
@@ -54,6 +55,7 @@ function AppContent() {
         <Stack.Screen name="Cadastro" component={Cadastro} />
         <Stack.Screen name="Menu" component={Menu} />
         <Stack.Screen name='Home' component={Home} />
+        <Stack.Screen name='Novo' component={Novo} />
       </Stack.Navigator>
 
       <StatusBar />
