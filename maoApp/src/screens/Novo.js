@@ -9,7 +9,9 @@ export function Novo(){
     return(
         <View className='flex-1 bg-branco dark:bg-preto-dark'>
             <ScrollView contentContainerStyle={{ padding: 10, paddingBottom: 110 }} className='flex'>
-                <NavTop titulo={'Novo Pedido'}/>
+                <View className='px-[2%]'>
+                    <NavTop titulo={'Novo Pedido'}/>
+                </View>
             </ScrollView>
             <Nav
                 active="Novo"
